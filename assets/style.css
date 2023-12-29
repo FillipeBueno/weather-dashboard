@@ -1,0 +1,38 @@
+.body{
+    margin: auto;
+}
+
+.sideBar{
+    padding-top: 50px;
+    position: relative;
+    left: -120px;
+}
+
+.input-group{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    
+    
+}
+
+.row{
+    display: flex;
+    justify-content: flex-start;
+    
+    
+}
+
+#search-input{
+    height: 48px;
+}
+
+#search-button{
+    margin-top: 20px;
+    width: 326px;
+    
+    
+}
+
+
