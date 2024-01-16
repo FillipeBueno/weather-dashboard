@@ -36,6 +36,7 @@ function presentContent() {
             return response.json();
 
         }).then(function (data) {
+            console.log(data);
             lat = data[0].lat;
             lon = data[0].lon
             
@@ -50,8 +51,10 @@ function presentContent() {
                     return response.json();
                 }).then(function (data2) {
                     console.log(data2)
-                    let icon = data2.list[0].;
-                    console.log(icon)
+                    let wheaterIcon = data2.list[0].weather[0].icon;
+                    console.log(wheaterIcon);
+                    const weatherIconElement = document.getElementById("weather-icon");
+                    
                 })
         }
         )
