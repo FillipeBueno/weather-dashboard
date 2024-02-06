@@ -24,6 +24,8 @@ let lon;
 
 let queryUrl2;
 
+let icon= "https://openweathermap.org/img/wn/10d@2x.png"
+
 
 
 function presentContent() {
@@ -52,8 +54,11 @@ function presentContent() {
                 }).then(function (data2) {
                     console.log(data2)
                     let wheaterIcon = data2.list[0].weather[0].icon;
-                    console.log(wheaterIcon);
-                    const weatherIconElement = document.getElementById("weather-icon");
+                    //console.log(wheaterIcon);
+                    const weatherIconElement = document.getElementById("today-image").setAttribute('src', "https://openweathermap.org/img/wn/"+ wheaterIcon+ "@2x.png");
+                    console.log(weatherIconElement)
+                     
+
                     
                 })
         }
