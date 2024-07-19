@@ -39,4 +39,10 @@
     display: none;
 }
 
+.today{
+    display: flex;
+    
+    padding-top: 25px;
+}
+
 
